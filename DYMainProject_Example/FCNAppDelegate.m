@@ -7,12 +7,26 @@
 //
 
 #import "FCNAppDelegate.h"
+#import "FFCallCenter+DYHomePageHeader.h"
 
 @implementation FCNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIViewController *homeViewController = [[FFCallCenter sharedInstance] dyHomePage];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+//    [[FFCallCenter sharedInstance] performActionWithUrl:url completion:^(NSDictionary *info) {
+//        NSLog(@"Do something after openURL");
+//    }];
+    
     return YES;
 }
 

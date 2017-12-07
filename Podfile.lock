@@ -1,3 +1,26 @@
-PODFILE CHECKSUM: ef9b46fc7a0dcc4f945ac8cacfe03e41a703eb80
+PODS:
+  - DYHomePage (0.0.10):
+    - DYShoppingBagHeader
+  - DYHomePageHeader (0.0.3):
+    - FFCallCenter
+  - DYShoppingBag (0.0.13)
+  - DYShoppingBagHeader (0.0.2):
+    - FFCallCenter
+  - FFCallCenter (0.0.4)
+
+DEPENDENCIES:
+  - DYHomePage
+  - DYHomePageHeader
+  - DYShoppingBag
+  - DYShoppingBagHeader
+
+SPEC CHECKSUMS:
+  DYHomePage: aecc32b134e483376b65ec59ae06d12e490d044a
+  DYHomePageHeader: bce3c63b129b9c48652886ecdde0e9933d150883
+  DYShoppingBag: 338611d927c33c78a4d4fe569abaffbc37efea82
+  DYShoppingBagHeader: e16f9ae4741b69d475db0276c24472efef628e55
+  FFCallCenter: a6dbc23c30a33efe9b282d7f23177fb2d2e4bc96
+
+PODFILE CHECKSUM: 717b386aeb0470424cf69ba43aa2c2f8b40ba888
 
 COCOAPODS: 1.3.1
